@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+:root {
+  --font-poppins: "Poppins", ui-sans-serif, system-ui;
+  --font-inter: "Inter", ui-sans-serif, system-ui;
+}
+
+@theme {
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui;
+  --font-display: var(--font-poppins), ui-sans-serif, system-ui;
+
+  --color-primary: #c7a645;
+  --color-accent: #0b2545;
+  --color-light: #ffffff;
+  --color-dark: #0b2545;
+  --color-success: #2e7d6c;
+  --color-danger: #b23a48;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: var(--color-light);
+  color: var(--color-dark);
+  font-family: var(--font-inter), var(--font-poppins), ui-sans-serif, system-ui;
+}
+
+h1 {
+  @apply font-bold;
+}
+
+h2 {
+  @apply font-bold;
+}
+
+h3 {
+  @apply font-semibold;
+}
+
+* {
+  @apply transition-colors duration-200 ease-in-out;
+}
+
+.btn-primary {
+  @apply inline-flex items-center justify-center px-5 py-3 rounded-2xl bg-primary text-dark font-medium shadow-sm transition;
+}
+
+.btn-primary:hover {
+  background-color: #b8933a;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center justify-center px-5 py-3 rounded-2xl border border-accent text-accent transition;
+}
+
+.btn-secondary:hover {
+  background-color: rgba(11, 37, 69, 0.08);
+  color: var(--color-accent);
+}
+
+.form-input {
+  @apply w-full rounded-xl border bg-light px-4 py-3 text-base text-dark transition-all duration-200;
+  border-color: rgba(11, 37, 69, 0.15);
+}
+
+.form-input::placeholder {
+  color: rgba(95, 99, 104, 0.7);
+}
+
+.form-input:focus {
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 2px rgba(11, 37, 69, 0.25);
+  outline: none;
+}
+
+.card {
+  @apply rounded-2xl shadow-md bg-white;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+
+input[type="date"] {
+  color: #212529;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  color: transparent;
+  background: transparent;
+}
+
+input[type="date"]:not(:valid)::before {
+  content: 'dd/mm/yyyy';
+  color: #6c757d;
+}
+
+input[type="text"], input[type="number"], input[type="email"] {
+  height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.mobile-bottom-safe {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@media (max-width: 768px) {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+  section {
+    @apply py-16 px-4;
+  }
+  .form-input, .btn {
+    @apply text-base py-3;
+  }
+}

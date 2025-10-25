@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 64 64">
+  <!-- Generator: Adobe Illustrator 29.8.2, SVG Export Plug-In . SVG Version: 2.1.1 Build 3)  -->
+  <defs>
+    <style>
+      .st0 {
+        fill: url(#linear-gradient);
+        fill-rule: evenodd;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="6581.96" y1="-6950.02" x2="7475.39" y2="-6867" gradientTransform="translate(-470.5 -465.74) scale(.07 -.07)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#00418a"/>
+      <stop offset="1" stop-color="#fc0"/>
+    </linearGradient>
+  </defs>
+  <path class="st0" d="M64,7.71c-6.87,11.71-26.89,20.56-58.73,26.82.25-2.43.51-4.84.76-7.25,22.33-2.15,41.11-9.48,57.97-19.57ZM61.26,19.31c-6.87,11.74-26.87,20.56-58.7,26.82.23-2.41.48-4.84.74-7.25,22.36-2.15,41.11-9.48,57.97-19.57ZM58.73,29.48c-6.87,11.74-26.87,20.56-58.73,26.82.25-2.41.51-4.82.76-7.25,22.36-2.15,41.11-9.48,57.97-19.57Z"/>
+</svg>
